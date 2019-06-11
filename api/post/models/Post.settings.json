@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Content": {
+      "type": "text"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "CreatedAt": {
+      "type": "date"
+    },
+    "CoverPhoto": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
